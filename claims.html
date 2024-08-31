@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR_Panel</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+</head>
+
+<body>
+
+    <!-- sidebar section -->
+
+    <label>
+        <input type="checkbox" />
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <div class="logo">
+                <img src="logo.png" />
+            </div>
+            <ul>
+                <li>
+                    <a style="text-decoration: none; color: black;" href="index.html"><i
+                            class="active-d fa-solid fa-border-all"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a style="text-decoration: none; color: black;" href="policies.html"><i
+                            class="fa-brands fa-galactic-republic"></i>Policies</a>
+                </li>
+                <li>
+                    <a style="text-decoration: none; color: black;" href="employee.html"><i
+                            class="fa-solid fa-user"></i>Employess</a>
+                </li>
+                <li>
+                    <a class="active-d" href="claims.html"><i class="active-d fa-regular fa-clipboard"></i>Claims</a>
+                </li>
+                <li>
+                    <a  style="text-decoration: none; color: black;" href="endorsements.html"><i class="fa-solid fa-users-gear"></i>Endorsements</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </label>
+
+
+
+    <!-- Left Dashboard Section -->
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-12 col-12 main">
+                <div class="logo">
+                    <img src="logo.png" />
+                </div>
+                <div class="dashboard">
+                    <tbody>
+                        <table>
+                            <tr>
+                                <td><i class="fa-solid fa-border-all"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="index.html">Dashboard</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-galactic-republic"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="policies.html">Policies</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-user"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="employee.html">Employess</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="active-d fa-regular fa-clipboard"></i></td>
+                                <td><a class="active-d" href="claims.html">Claims</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-users-gear"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="endorsements.html">Endorsements</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-hand-holding-medical"></i></td>
+                                <td>Health & Wellness</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-wpforms"></i></td>
+                                <td>HRMS Integration</td>
+                            </tr>
+                        </table>
+                    </tbody>
+                    <div class="setting">
+                        <tbody>
+                            <table>
+                                <tr>
+                                    <td><i class="fa-solid fa-gear"></i></td>
+                                    <td class="st">Settings</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa-solid fa-right-from-bracket"></i></td>
+                                    <td class="st">Sign Out</td>
+                                </tr>
+                    </div>
+
+                    </table>
+                    </tbody>
+
+                    <div class="support">
+                        <tbody>
+                            <table>
+                                <tr class="sup">
+                                    <td><i class="fa-solid fa-circle-question"></i></td>
+                                    <td class="st">Support</td>
+                                </tr>
+                            </table>
+                        </tbody>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-sm-12 col-12 horizontal">
+            <div class="welcome">
+                <div class="wel">
+                    <h2 class="active">Policies</h2>
+                    <p>Welcome, Rajni Kushwa!</p>
+                </div>
+                <div class="wel2">
+                    <div class="admin">
+                        <img src="user.png">
+                    </div>
+                    <div class="dott">
+                        <h2 class="dot"></h2>
+                        <h2 class="dot"></h2>
+                        <h2 class="dot"></h2>
+                    </div>
+                </div>
+                <!-- <div class="f-layer"></div> -->
+
+            </div>
+            <div class="f-layer"></div>
+            <!-- <hr> -->
+
+            <!-- container section -->
+
+            <div class="row dashboard-card">
+                <div class="col-md-8 col-sm-12 col-12 main2">
+
+                    <!-- dropdown section on top -->
+
+                    <!-- <div class="row drop-d">
+                        <div class="col-md-3 col-lg-3 col-sm-3 select">
+                            <p>Select Policy</p>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 col-sm-6 dropdown">
+
+                                <div class="wrapper wrapper1" id="wrapper">
+                                    <p class="click-text">
+                                      Group Health Insurance <span class="arrow-drop"></span>
+                                    </p>
+                                    <ul>
+                                      <li>Employess</li>
+                                      <li>Claims</li>
+                                      <li>Endorsements</li>
+                                    </ul>
+                                  </div>
+                            </div>
+                    </div> -->
+
+                    <div class="add-emp2">
+                        <h3>Claims Overview</h3>
+                    </div>
+
+                    <!-- first card -->
+                    <div class="backgrounds-claims">
+                        <div class="profile-policy profile-claims">
+                            <div class="pro_main insurance-f">
+                                <div class="care_text">
+                                    <h2>Group Health Insurance Floater</h2>
+                                    <div class="sec-table2">
+                                        <tbody>
+                                            <table>
+                                                <tr>
+                                                    <td><b>Policy No</b> </td>
+                                                    <td class="sev-no">74839453</td>
+                                                </tr>
+                                            </table>
+                                        </tbody>
+                                    </div>
+                                </div>
+                                <div class="pdf">
+                                    <h2 class="claim-pdf"><a href="#"><i class="fa-solid fa-arrow-down"></i> Claim
+                                            Process PDF</a></h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-7 col-lg-7 col-sm-12 col-12">
+                                    <div class="eskp-low2">
+                                        <div class="frist-em">
+                                            <h3>Open Claims</h3>
+                                            <div class="em-text">
+                                                <h2>20</h2>
+                                            </div>
+                                            <h3><i class="fa-solid fa-indian-rupee-sign"></i> 74839453</h3>
+                                        </div>
+
+                                        <div class="frist-em">
+                                            <h3>Paid claims</h3>
+                                            <div class="em-text">
+                                                <h2>30</h2>
+                                            </div>
+                                            <h3><i class="fa-solid fa-indian-rupee-sign"></i>74839453</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="sec-table2 c-ratio">
+                                        <tbody>
+                                            <table>
+                                                <tr>
+                                                    <td><b>Employee dependent claim Ratio</b> </td>
+                                                    <td class="sev-no"><b>3:4</b></td>
+                                                </tr>
+                                            </table>
+                                        </tbody>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5 col-lg-5 col-sm-12 col-12 re-claim">
+                                    <tbody>
+                                        <table class="forty">
+                                            <tr>
+                                                <td>Reimbursement Claims 40%</td>
+                                            </tr>
+                                        </table>
+                                    </tbody>
+                                    <canvas id="myChart22" style="height: 166px; width: 100%;"></canvas>
+                                    <div class="sec-table2 c-ratio incurred-r">
+                                        <tbody>
+                                            <table>
+                                                <tr>
+                                                    <td>Cashless Claims 60%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Incurred Claim Ratio <b>70%</b></td>
+                                                </tr>
+                                            </table>
+                                        </tbody>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="req emp">
+                            <p><a href="#">How to improve ICR ?</a></p>
+                            <div class="btns-cover down-btn">
+                                <button type="button" class="btn tab-button" data-target="#section2"><i
+                                        class="fa-solid fa-arrow-down"></i>Claim MIS</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- second section -->
+
+                    <h2 class="policy">Reimbursement Claim Submission</h2>
+
+                    <div class="care_health_claim">
+                        <div class="pending">
+                            <h2><a href="#">Related Links & Docs</a></h2>
+
+
+                            <div class="ne_section">
+                                <div class="take-arrow-blue">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <span><a href="#">Network Hospital</a></span>
+                                </div>
+                                <div class="take-arrow-blue">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <span><a href="#">Non-Network Hospitals</a></span>
+                                </div>
+                                <div class="take-arrow-blue">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <span><a href="#">Claims Form B</a></span>
+                                </div>
+                                <div class="take-arrow-blue">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <span><a href="#">Basic Document Checklist</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- third section -->
+
+                    <div class="add-emp2">
+                        <h3>List of Open remibursement Claims</h3>
+                    </div>
+
+
+                    <div id="#" class="section active container add-review know-stage">
+                        <div class="row add-re">
+                            <div class="search-container">
+                                <div class="search-bar">
+                                    <input type="text" placeholder="Search...">
+                                    <button class="search-icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- first-card -->
+                            <div class="list-claim">
+                                <div class="rb-main">
+                                    <div class="claim-third Dated">
+                                        <span class="greens-claims"></span>
+                                        <P>Reimbursement Claim <br><b>Dated:25/04/24</b></P>
+                                    </div>
+                                    <div class="claim-third r-claim">
+                                        <span class="purple-claims"><b>R</b></span>
+                                        <P>Riskbirbal <br>RB1001</P>
+                                    </div>
+                                </div>
+
+                                <div class="row stage-claim">
+                                    <div class="col-md-3 col-lg-3 col-sm-3 col-12">
+                                        <!-- <div id="chartdiv"></div> -->
+                                        <div class="six-stage">
+                                            <img src="assets/halfchart.png" alt="">
+                                            <p class="stage">Stage 6</p>
+                                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Know
+                                                Stage</a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-5 col-lg-5 col-sm-5 col-12 cln-number">
+                                        <p>Claim No:12435444</p>
+                                        <tbody>
+                                            <table>
+                                                <tr>
+                                                    <td>Patient Name</td>
+                                                    <td>Meena</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Relation</td>
+                                                    <td>Spouse</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Claimed Amount</td>
+                                                    <td>25000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Expected End Date</td>
+                                                    <td>27/08/2024</td>
+                                                </tr>
+
+                                            </table>
+                                        </tbody>
+                                        <p class="status">Status: Document Awaited</p>
+                                    </div>
+
+
+                                    <div class="col-md-4 col-lg-4 col-sm-4 col-12 speaker">
+                                        <div class="btn-speaker">
+                                            <button class="btn btn-primary">
+                                                <img src="assets/speaker.png" alt=""><span>Raise Ticket</span>
+                                            </button>
+                                        </div>
+                                        <div class="feedbacks">
+                                            <img src="assets/feedbacks.png" alt="">
+                                            <a href="#">Feedback?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span>&nbsp</span>
+
+                            <!-- second-card -->
+                            <div class="list-claim">
+                                <div class="rb-main">
+                                    <div class="claim-third Dated">
+                                        <span class="greens-claims"></span>
+                                        <P>Reimbursement Claim <br><b>Dated:27/08/24</b></P>
+                                    </div>
+                                    <div class="claim-third r-claim">
+                                        <span class="purple-claims"><b>R</b></span>
+                                        <P>Riskbirbal <br>RB1002</P>
+                                    </div>
+                                </div>
+
+                                <div class="row stage-claim">
+                                    <div class="col-md-3 col-lg-3 col-sm-3 col-12">
+                                        <!-- <div id="chartdiv"></div> -->
+                                        <div class="six-stage">
+                                            <img src="assets/halfchart2.png" alt="">
+                                            <p class="stage">Stage 4</p>
+                                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Know
+                                                Stage</a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-5 col-lg-5 col-sm-5 col-12 cln-number">
+                                        <p>Claim No:12435444</p>
+                                        <tbody>
+                                            <table>
+                                                <tr>
+                                                    <td>Patient Name</td>
+                                                    <td>Meena</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Relation</td>
+                                                    <td>Spouse</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Claimed Amount</td>
+                                                    <td>25000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Expected End Date</td>
+                                                    <td>27/08/2024</td>
+                                                </tr>
+
+                                            </table>
+                                        </tbody>
+                                        <p class="status">Status: Document Awaited</p>
+                                    </div>
+
+
+                                    <div class="col-md-4 col-lg-4 col-sm-4 col-12 speaker">
+                                        <div class="btn-speaker">
+                                            <button class="btn btn-primary">
+                                                <img src="assets/speaker.png" alt=""><span>Raise Ticket</span>
+                                            </button>
+                                        </div>
+                                        <div class="feedbacks">
+                                            <img src="assets/feedbacks.png" alt="">
+                                            <a href="#">Feedback?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- fourth section -->
+
+                    <div class="add-emp2">
+                        <h3>Claim Ratio Analysis</h3>
+                    </div>
+
+                    <div class="backgrounds-claims analytical-report">
+                        <div class="req emp arr">
+                            <p><a href="#">Analytical Report by Relationship</a></p>
+
+                        </div>
+                        <div class="profile-policy profile-claims floater-claims">
+                            <div class="insurance-f">
+                                <div class="text-health">
+                                    <h2>Group Health Insurance Floater</h2>
+                                    <h3>Policy No <span>74839453</span></h3>
+                                </div>
+                            </div>
+
+                            <div class="row doughnut-main">
+                                <div class="col-md-6 col-lg-6 col-sm-6">
+                                    <div class="doughnut-img">
+                                        <img src="assets/doughnut.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6">
+                                    <div class="doughnut-table">
+                                        <div class="row drop-d">
+                                            <div class="col-md-4 col-lg-4 col-sm-4 select-s">
+                                                <p>Select Factors</p>
+                                            </div>
+                                            <div class="col-md-8 col-lg-8 col-sm-8 dropdown">
+                                                <div class="wrapper wrapper1 wrapper2" id="wrapper">
+                                                    <p class="click-text">
+                                                        Relationship <span class="arrow-drop"></span>
+                                                    </p>
+                                                    <ul>
+                                                        <li>Employess</li>
+                                                        <li>Claims</li>
+                                                        <li>Endorsements</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Relation</th>
+                                                    <th>Claim Amount</th>
+                                                    <th>Count</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Employee</td>
+                                                    <td>Rs.96000 </td>
+                                                    <td>12</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Spouse</td>
+                                                    <td>Rs.96000</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kids</td>
+                                                    <td>Rs.96000</td>
+                                                    <td>11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Parents</td>
+                                                    <td>Rs.96000</td>
+                                                    <td>8</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- fifth card -->
+
+                    <div class="ask-riskb">
+                        <div class="row">
+                            <div class="ashwin col-md-3 col-sm-3 col-lg-3 col-3">
+                                <div class="ask-top">
+                                    <img src="assets/ask-dotted.png" alt="">
+                                </div>
+                                <div class="ask-bot">
+                                    <img src="assets/ask-girl.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 col-lg-5 col-ms-5 col-5">
+                                <div class="ask-text">
+                                    <h2>Ask Riskbirbal ?</h2>
+                                    <p>How to reduce Claim ratio
+                                        and save budget to get
+                                        additional benefits for your
+                                        team?</p>
+                                </div>
+                                <div class="get-button">
+                                    <button class="btn btn-primary">Get Started</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-4">
+                                <div class="design-img">
+                                    <img src="assets/ask-design.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- sixth-card -->
+
+                    <div class="last-sec-img">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-4">
+                                <div class="boys">
+                                    <img src="assets/boys.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-4">
+                                <div class="girls">
+                                    <img src="assets/girl.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-4 col-4">
+                                <div class="saves">
+                                    <img src="assets/save.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+
+
+
+
+                </div>
+
+
+
+                <!-- last column health card -->
+
+
+                <div class="col-md-4 col-sm-12 col-12">
+
+                    <div class="second-col">
+                        <div class="first-row">
+                            <div class="top-row">
+                                <div class="dotted">
+                                    <h2 class="do"></h2>
+                                    <h2 class="do"></h2>
+                                    <h2 class="do"></h2>
+                                </div>
+                                <div class="pink-card">
+                                    <h2>Health <br>Cards</h2>
+                                    <div class="pro-arrows">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                                <div class="blue-card">
+                                    <h2>CD <br>Statement</h2>
+                                    <div class="pro-arrowss">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="web">Upcoming Webinars</h2>
+                        <div class="second-row">
+                            <img src="webinar.png" alt="">
+                            <div class="girl-img"></div>
+                            <!-- <img src="webinar.png" alt=""> -->
+                            <div class="banner-text">
+                                <div class="rec">
+                                    <h2 class="red-dot"></h2>
+                                    <p>Rec</p>
+                                </div>
+                                <!-- <div class="cor-logo">
+                                <img src="logo2.png">
+                            </div> -->
+                                <div class="dr-text">
+                                    <span>DrAaron</span>
+                                    <p>Hypertention</p>
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="last-row">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa-solid fa-arrows-rotate"></i></td>
+                                        <td class="font">Network hospitals</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-shield-halved"></i></td>
+                                        <td class="font">Non-Preferred Hospital List</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-indian-rupee-sign"></i></td>
+                                        <td class="font">Claim Process</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-file-pen"></i></td>
+                                        <td class="font">Policy copy</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-regular fa-lightbulb"></i></td>
+                                        <td class="font">Endorsements Letter</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-square-phone"></i></td>
+                                        <td class="font">Contact Us</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-regular fa-circle-question"></i></td>
+                                        <td class="font">FAQs</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-newspaper"></i></td>
+                                        <td class="font">News & Updates</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+
+        // full chart
+
+        // var xValues = ["Today", "Tomorrow", "Later", "Over Due"];
+        var yValues = [35, 24];
+        var barColors = [
+
+            // 'rgb(95, 110, 209)',
+            'rgb(100,213,236)',
+            'rgb(83, 129, 218)'
+        ];
+
+        new Chart("myChart22", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+
+            },
+            options: {
+                title: {
+                    display: true,
+                    //   text: ""
+                }
+            }
+        });
+
+        // half chart
+
+        // Doughnut
+
+
+
+    </script>
+
+</body>
+
+</html>

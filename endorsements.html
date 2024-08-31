@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- sidebar section -->
+
+    <div class="label-box">
+        <label>
+            <input type="checkbox" />
+            <div class="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <div class="slide">
+                <div class="logo">
+                    <img src="logo.png" />
+                </div>
+                <ul>
+                    <li>
+                        <a style="text-decoration: none; color: black;" href="index.html"><i
+                                class="active-d fa-solid fa-border-all"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: black;" href="policies.html"><i
+                                class="fa-brands fa-galactic-republic"></i>Policies</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: black;" href="employee.html"><i
+                                class="fa-solid fa-user"></i>Employess</a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: black;" href="claims.html"><i
+                                class="fas fa-tv"></i>Claims</a>
+                    </li>
+                    <li>
+                        <a class="active-d" href="endorsements.html"><i class="fas fa-tv"></i>Endorsements</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-tv"></i>Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </label>
+    </div>
+
+
+    <!-- Left Dashboard Section -->
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-12 col-12 main">
+                <div class="logo">
+                    <img src="logo.png" />
+                </div>
+                <div class="dashboard">
+                    <tbody>
+                        <table>
+                            <tr>
+                                <td><i class=" fa-solid fa-border-all"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="index.html">Dashboard</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-galactic-republic"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="policies.html">Policies</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-user"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="employee.html">Employess</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-clipboard"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="claims.html">Claims</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="active-d fa-solid fa-users-gear"></i></td>
+                                <td><a class="active-d" href="endorsements.html">Endorsements</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-hand-holding-medical"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="claims.html">Health &
+                                        Wellness</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-brands fa-wpforms"></i></td>
+                                <td><a style="text-decoration: none; color: black;" href="claims.html">HRMS
+                                        Integration</a></td>
+                            </tr>
+                        </table>
+                    </tbody>
+                    <div class="setting">
+                        <tbody>
+                            <table>
+                                <tr>
+                                    <td><i class="fa-solid fa-gear"></i></td>
+                                    <td class="st">Settings</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa-solid fa-right-from-bracket"></i></td>
+                                    <td class="st">Sign Out</td>
+                                </tr>
+                    </div>
+
+                    </table>
+                    </tbody>
+
+                    <div class="support">
+                        <tbody>
+                            <table>
+                                <tr class="sup">
+                                    <td><i class="fa-solid fa-circle-question"></i></td>
+                                    <td class="st">Support</td>
+                                </tr>
+                            </table>
+                        </tbody>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-sm-12 col-12 horizontal">
+            <div class="welcome">
+                <div class="wel">
+                    <h2 class="active">Endorsements</h2>
+                    <p>Welcome, Rajni Kushwa!</p>
+                </div>
+                <div class="wel2">
+                    <div class="admin">
+                        <img src="user.png">
+                    </div>
+                    <div class="dott">
+                        <h2 class="dot"></h2>
+                        <h2 class="dot"></h2>
+                        <h2 class="dot"></h2>
+                    </div>
+                </div>
+                <!-- <div class="f-layer"></div> -->
+
+            </div>
+            <div class="f-layer"></div>
+            <!-- <hr> -->
+
+            <!-- container section -->
+
+            <div class="row dashboard-card">
+                <div class="col-md-8 col-sm-12 col-12 main2">
+
+                    <!-- dropdown section on top -->
+
+                    <div class="row drop-d">
+                        <div class="col-md-3 col-lg-3 col-sm-12 select">
+                            <p>Select Policy</p>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 col-12 dropdown">
+
+                            <div class="wrapper wrapper1" id="wrapper">
+                                <p class="click-text">
+                                    Group Health Insurance <span class="arrow-drop"></span>
+                                </p>
+                                <ul>
+                                    <li>Employess</li>
+                                    <li>Claims</li>
+                                    <li>Endorsements</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- first card -->
+
+                    <div class="add-emp2">
+                        <h3>Endorsements Overview</h3>
+                    </div>
+
+                    <div class="indo-sec-main">
+                        <div class="profile-policy endorsements-bg">
+                            <div class="pro_main endo-pro">
+                                <div class="care_text endo-text">
+                                    <div class="endo-group">
+                                        <h2>Group Health Insurance Floater</h2>
+                                        <div class="endo-tables">
+                                            <table>
+                                                <tr>
+                                                    <td>Policy No </td>
+                                                    <td><span>74839453</span></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                    <div class="efgh">
+                                        <div class="smile endo-wallet">
+                                            <p><img src="assets/wallet2.png" alt=""><a href="#">CD Balance</a><i
+                                                    class="fa-solid fa-indian-rupee-sign"><span>5,000</span></i></p>
+                                        </div>
+                                        <div class="endo-arrow">
+                                            <i class="fa-solid fa-arrow-down"></i>
+                                            <span><a href="#">Low</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="eskp-low endo-para">
+                                <div class="frist-em">
+                                    <p>Starting Policy premium </p>
+                                    <p>Starting total Lives</p>
+                                </div>
+
+                                <div class="frist-em text-color">
+                                    <p><i class="fa-solid fa-indian-rupee-sign"></i>48000</p>
+                                    <p>150</p>
+                                </div>
+
+                                <div class="frist-em">
+                                    <p>Current policy premium</p>
+                                    <p>Current Total Lives</p>
+                                </div>
+                                <div class="frist-em text-color">
+                                    <p><i class="fa-solid fa-indian-rupee-sign"></i>58000<i
+                                            class="rupees fa-solid fa-arrow-up"></i></p>
+                                    <p>160</p>
+                                </div>
+                            </div>
+
+                            <div class="endo-addition-main">
+                                <div class="addition">
+                                    <div class="endo-plus">
+                                        <img src="assets/plus.png" alt="">
+                                    </div>
+                                    <div class="addition-text">
+                                        <ul>
+                                            <li>Additions</li>
+                                            <li><b>60 Lives</b></li>
+                                            <li><i class="fa-solid fa-indian-rupee-sign"></i> 48000</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="addition">
+                                    <div class="indo-plus">
+                                        <img src="assets/minus.png" alt="">
+                                    </div>
+                                    <div class="addition-text">
+                                        <ul>
+                                            <li>Deletions</li>
+                                            <li><b>50 Lives</b></li>
+                                            <li><i class="fa-solid fa-indian-rupee-sign"></i> 34000</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="addition">
+                                    <div class="indo-plus">
+                                        <img src="assets/pencil.png" alt="">
+                                    </div>
+                                    <div class="addition-text">
+                                        <ul>
+                                            <li>Corrections</li>
+                                            <li>10</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row endo-approved approved-align">
+                                    <div class="col-md-8 col-lg-8 col-sm-8 col-8">
+                                        <div class=" endo-cycle">
+                                            <div class="addition">
+                                                <div class="endo-plus">
+                                                    <img src="assets/saved.png" alt="">
+                                                </div>
+                                                <div class="addition-text approved-endo">
+                                                    <ul>
+                                                        <li>Approved and aligned</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="endo-month">
+                                                <ul>
+                                                    <li>Endorsement cycle Month</li>
+                                                    <li class="june-m">JUNE</li>
+                                                </ul>
+                                                <img src="assets/i-tag.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="six-lives">
+                                            <div class="addition">
+                                                <div class="endo-plus">
+                                                    <img src="assets/small-plus.png" alt="">
+                                                </div>
+                                                <div class="addition-text">
+                                                    <ul>
+                                                        <li>60 Lives</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="addition">
+                                                <div class="endo-plus">
+                                                    <img src="assets/small-minus.png" alt="">
+                                                </div>
+                                                <div class="addition-text">
+                                                    <ul>
+                                                        <li>60 Lives</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="addition">
+                                                <div class="endo-plus">
+                                                    <img src="assets/small-saved.png" alt="">
+                                                </div>
+                                                <div class="addition-text">
+                                                    <ul>
+                                                        <li>5</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-4 col-4">
+                                        <div class="handsake">
+                                            <img src="assets/handsake.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="erp-button">
+                                        <button class="btn">Endorsements Request Pending</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- second section with search bar-->
+
+                    <div class="add-emp2">
+                        <h3>Endorsements approved and aligned</h3>
+                    </div>
+
+
+                    <div class="search-container">
+
+                        <div class="download-sheet">
+                            <p><i class="fa-solid fa-arrow-down"></i>Download Endorsement sheet</p>
+                        </div>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search...">
+                            <button class="search-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- second card -->
+
+                    <div class="emp-id">
+                        <div class="row">
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <h2>Emp ID</h2>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <h2>Employee Name</h2>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <h2>Dependents</h2>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <h2>Status</h2>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <h2>Health Card</h2>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <h2>Actions</h2>
+                            </div>
+                            <!-- hr -->
+
+                            <div class="emp-hr"></div>
+
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <p>RB1001</p>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <p>Riskbirbal</p>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <p>2</p>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2">
+                                <p>Active</p>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2 june">
+                                <div class="btns-cover btns-cover2">
+                                    <button class="btn">June</button>
+                                </div>
+
+                            </div>
+                            <div class="col-md-2 col-lg-2 log-sm-2 col-2 action-btn">
+                                <div class="dotteds">
+                                    <h3 class="do">
+                                        </h2>
+                                        <h3 class="do">
+                                            </h2>
+                                            <h3 class="do">
+                                                </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third card -->
+
+                    <div class="add-emp2">
+                        <h3>Endorsement Letter/copy</h3>
+                    </div>
+
+                    <div class="emp-id">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <h2>Endorsement cycle Month</h2>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <h2>Endorsement copy number</h2>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <h2>Status</h2>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <h2>Download</h2>
+                            </div>
+
+                            <!-- hr -->
+
+                            <div class="emp-hr"></div>
+
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3 june">
+                                <div class="btns-cover btns-cover2">
+                                    <button class="btn">June</button>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <p>End1001</p>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <p>Approved by Insurer</p>
+
+                            </div>
+
+
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <div class="download-sheet">
+                                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fourth card -->
+
+                    <div class="add-emp2">
+                        <h3>Endorsements Pending for HR approval</h3>
+                    </div>
+
+                    <div class="emp-id emp-id2">
+                        <div class="endo-addition-main endo-pending">
+                            <div class="addition">
+                                <div class="endo-plus">
+                                    <img src="assets/plus.png" alt="">
+                                </div>
+                                <div class="addition-text">
+                                    <ul>
+                                        <li>Additions</li>
+                                        <li><strong>60 Lives</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="addition">
+                                <div class="indo-plus">
+                                    <img src="assets/minus.png" alt="">
+                                </div>
+                                <div class="addition-text">
+                                    <ul>
+                                        <li>Deletions</li>
+                                        <li><strong>50 Lives</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="addition">
+                                <div class="indo-plus">
+                                    <img src="assets/pencil.png" alt="">
+                                </div>
+                                <div class="addition-text">
+                                    <ul>
+                                        <li>Corrections</li>
+                                        <li><strong>10</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="endo-addition-main endo-pending">
+                            <div class="cd-blance">
+                                <ul>
+                                    <li class="current-purple">Current CD Balance</li>
+                                    <li>Rs.50,000</li>
+                                </ul>
+                            </div>
+                            <div class="cd-blance">
+                                <ul>
+                                    <li class="average-pink">Average balance</li>
+                                    <li>Rs.10,000</li>
+                                </ul>
+                            </div>
+                            <div class="cd-blance">
+                                <ul>
+                                    <li class="required-cyan">Required Funds</li>
+                                    <li>Rs.12,000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fifth card -->
+
+                    <div class="emp-id emp-id2">
+                        <div class="search-container">
+
+                            <div class="download-sheet">
+                                <p><i class="fa-solid fa-arrow-down"></i>Download Endorsement sheet</p>
+                            </div>
+                            <div class="search-bar approve-sec">
+                                <input type="text" placeholder="Search...">
+                                <button class="search-icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+
+                                <div class="app-rej">
+                                    <div class="btns-cover btns-cover2">
+                                        <button class="btn">Approve</button>
+                                    </div>
+                                    <div class="btns-cover btns-cover2">
+                                        <button class="btn pink-rej">Reject</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row endo-id">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-3">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"><p>Emp id Name</p></label>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-2 col-2">
+                                <p>Dependent</p>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-3">
+                                <p>Request type</p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 cl-sm-2 col-2">
+                                <p>Endorsement Month</p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-2 col-2">
+                                <p>Approve Reject</p>
+                            </div>
+                            <div class="f-layer"></div>
+                        </div>
+
+                        <div class="row endo-id">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-3 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label class="end1001" for="vehicle1"><p>End1001 <br>Riskbirbal</p></label>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-2 col-2 my-2">
+                                <p class="two-text"><span>0</span></p>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-3 my-2">
+                                <p class="tex-p text-primary">New Registeration</p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 cl-sm-2 col-2 my-2">
+                                <p>June</p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-2 col-2 my-2">
+                                <div class="btns-cover btns-cover2">
+                                    <button class="btn2">Take Action</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="row endo-id">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-3 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label class="end1001" for="vehicle1"><p>End1001 <br>Riskbirbal</p></label>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-2 col-2 my-2">
+                                <p class="two-text"><span>2</span></p>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-3 my-2">
+                                <p class="tex-p text-primary">New Addition</p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 cl-sm-2 col-2 my-2">
+                                <p>June</p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-2 col-2 my-2">
+                                <div class="btns-cover btns-cover2">
+                                    <button class="btn2">Take Action</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+
+                    <!-- sixth card -->
+
+                    <div class="add-emp2">
+                        <h3>CD statement</h3>
+                    </div>
+
+                    <div class="emp-id">
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <h2>Endorsement cycle Month</h2>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <h2>Endorsement copy number</h2>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <h2>Status</h2>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <h2>Download</h2>
+                            </div>
+
+                            <!-- hr -->
+
+                            <div class="emp-hr"></div>
+
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3 june">
+                                <div class="btns-cover btns-cover2">
+                                    <button class="btn">June</button>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <p>End1001</p>
+
+                            </div>
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <p>Approved by Insurer</p>
+
+                            </div>
+
+
+                            <div class="col-md-3 col-lg-3 log-sm-3 col-3">
+                                <div class="download-sheet">
+                                    <p><i class="fa-solid fa-arrow-down"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                <!-- last column health card -->
+
+
+                <div class="col-md-4 col-sm-12 col-12">
+
+                    <div class="second-col">
+                        <div class="first-row">
+                            <div class="top-row">
+                                <div class="dotted">
+                                    <h2 class="do"></h2>
+                                    <h2 class="do"></h2>
+                                    <h2 class="do"></h2>
+                                </div>
+                                <div class="pink-card">
+                                    <h2>Health <br>Cards</h2>
+                                    <div class="pro-arrows">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                                <div class="blue-card">
+                                    <h2>CD <br>Statement</h2>
+                                    <div class="pro-arrowss">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="web">Upcoming Webinars</h2>
+                        <div class="second-row">
+                            <img src="webinar.png" alt="">
+                            <div class="girl-img"></div>
+                            <!-- <img src="webinar.png" alt=""> -->
+                            <div class="banner-text">
+                                <div class="rec">
+                                    <h2 class="red-dot"></h2>
+                                    <p>Rec</p>
+                                </div>
+                                <!-- <div class="cor-logo">
+                                <img src="logo2.png">
+                            </div> -->
+                                <div class="dr-text">
+                                    <span>DrAaron</span>
+                                    <p>Hypertention</p>
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="last-row">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa-solid fa-arrows-rotate"></i></td>
+                                        <td class="font">Network hospitals</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-shield-halved"></i></td>
+                                        <td class="font">Non-Preferred Hospital List</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-indian-rupee-sign"></i></td>
+                                        <td class="font">Claim Process</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-file-pen"></i></td>
+                                        <td class="font">Policy copy</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-regular fa-lightbulb"></i></td>
+                                        <td class="font">Endorsements Letter</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-square-phone"></i></td>
+                                        <td class="font">Contact Us</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-regular fa-circle-question"></i></td>
+                                        <td class="font">FAQs</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa-solid fa-newspaper"></i></td>
+                                        <td class="font">News & Updates</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
